@@ -36,7 +36,7 @@ if (min >= 60) {
 	min = min % 60;
 	min = min < 10 ? '0' + min : min;
 }
-sendback = frames + ' Frames at ' + fps + ' FPS = ' + hour + 'h ' + min + 'm ' + sec + 's ' + mili + 'ms';
+sendback = document.getElementsByName("frames")[0].value + ' Frames at ' + document.getElementsByName("fps")[0].value + ' FPS = ' + hour + 'h ' + min + 'm ' + sec + 's ' + mili + 'ms';
 document.getElementsByName("timeresult")[0].innerHTML = sendback
 }
 </script>
