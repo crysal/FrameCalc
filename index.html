@@ -3,7 +3,8 @@
 </p><p>FRAME RATE:
 <input name="fps" type="text" id="fps" value="30" onkeyup="framesToTime();">
 </p>
-<div name="timeresult" class="result"></div>
+<div name="timeresult"></div>
+<div name="credits" value="https://crysal.github.io/FrameCalc/"></div>
 
 <script>
 let frames
@@ -35,7 +36,7 @@ if (min >= 60) {
 	min = min % 60;
 	min = min < 10 ? '0' + min : min;
 }
-sendback = hour + 'h ' + min + 'm ' + sec + 's ' + mili + 'ms';
+sendback = frames + ' Frames at ' + fps + ' FPS = ' + hour + 'h ' + min + 'm ' + sec + 's ' + mili + 'ms';
 document.getElementsByName("timeresult")[0].innerHTML = sendback
 }
 </script>
