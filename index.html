@@ -4,7 +4,6 @@
 <input name="fps" type="text" id="fps" value="30" onkeyup="framesToTime();">
 </p>
 <div name="timeresult"></div>
-<div name="credits" value="https://crysal.github.io/FrameCalc/"></div>
 
 <script>
 let frames
@@ -40,3 +39,8 @@ sendback = document.getElementsByName("frames")[0].value + ' Frames at ' + docum
 document.getElementsByName("timeresult")[0].innerHTML = sendback
 }
 </script>
+
+<div style="position: fixed;left: 0;bottom: 0;width: 100%;text-align: center">
+  <p>Check with leaderboard moderaters if you need to subtract 1 ms.</p>
+<p style="font-size: 10px">FrameCalc by <a href="https://www.speedrun.com/user/crysal">Crysal</a></p>
+</div>
